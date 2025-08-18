@@ -17,7 +17,8 @@ model = OpenAIChatCompletionsModel(
 )
 run_config = RunConfig(
     model= model,
-    model_provider= client
+    model_provider= client,
+    tracing_disabled= True
 )
 
 assistant_agent = Agent(
